@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.rectangle{
+    width: 400px;
+    height: 400px;
+    border-radius: 49px;
+    /*border: 10px solid green;*/
+    background: #648474;
+    box-shadow: 0 4px 4px 0 rgba(299, 299, 299, 0.5);
+    /*margin: 116px auto 0 auto;*/
+}
