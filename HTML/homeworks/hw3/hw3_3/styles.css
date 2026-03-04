@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    gap: 20px;
+}
+section p{
+    width: 80%;
+    line-height: 1.5;
+}
+#top{
+    background: #d33b3b;
+}
+#middle{
+    background: #22C1C3;
+}
+#bottom{
+    background: #39b639;
+}
+a{
+    font-size: 50px;
+    color: black;
+    font-weight: 800;
+}

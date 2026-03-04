@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 50vh;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+section p{
+    width: 80%;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+.top{
+    background: #e7a0ad;
+    color: #443f4f;
+}
+.bottom{
+    background: #443f4f;
+    color: #e7a0ad;
+}
