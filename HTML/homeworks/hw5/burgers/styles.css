@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Bowlby One", sans-serif;
 }
 body{
     background: #1E1E1E;
@@ -26,7 +27,6 @@ ul{
 }
 ul a{
     color: #E9E3DC;
-    font-family: "Bowlby One", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 96.896%;
@@ -47,7 +47,6 @@ nav .active{
     width: 1255px;
     color: #E9E3DC;
     text-align: center;
-    font-family: "Bowlby One", sans-serif;
     font-size: 107.088px;
     font-style: normal;
     font-weight: 400;
@@ -72,7 +71,6 @@ nav .active{
 .section1 h2{
     width: 533px;
     color: #1E1E1E;
-    font-family: "Bowlby One", sans-serif;
     font-size: 70px;
     font-weight: 400;
     line-height: 88.896%;
@@ -103,19 +101,17 @@ nav .active{
     box-shadow: 8px 8px 0 0 #000;
     color: #1E1E1E;
     text-align: center;
-    font-family: "Bowlby One", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 96.896%;
     text-transform: uppercase;
-    margin: 0 494px 100px 0;
 }
 /************************************************/
 .images{
     display: flex;
     justify-content: space-between;
     margin: 64px auto;
-    gap: 40px;
+    height: 100%;
 }
 .images img{
     width: 650px;
@@ -134,12 +130,11 @@ nav .active{
     width: 895px;
     color: #E9E3DC;
     text-align: center;
-    font-family: "Bowlby One", sans-serif;
     font-size: 70px;
     font-weight: 400;
     line-height: 101.896%;
     text-transform: uppercase;
-    margin: 64px 222px 33px 273px;
+    margin: 64px 0 33px 0;
 }
 .bottom button{
     width: 196px;
@@ -147,10 +142,10 @@ nav .active{
     background: #D1EF53;
     color: #1E1E1E;
     text-align: center;
-    font-family: "Bowlby One", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 96.896%;
     text-transform: uppercase;
     margin-bottom: 36px;
+    border: none;
 }
