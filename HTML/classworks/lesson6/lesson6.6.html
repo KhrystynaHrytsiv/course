@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <style>
+        label{
+            display: block;
+            margin-top: 10px;
+        }
+        form sup{
+            color: red;
+        }
+        textarea{
+            resize: none;
+            width: 40px;
+        }
+        .form{
+            border: 3px solid darkcyan;
+            width: 30%;
+            border-radius: 20px;
+            padding: 50px;
+        }
+        input[type='text']{
+            background: #33ec79;
+            border: 2px solid darkgreen;
+            border-radius: 10px;
+            color: #ff3f34;
+           font-family: "Fjalla One", sans-serif;
+        }
+        input[type='text']::placeholder{
+            color: #5454D4;
+
+        }
+        input[type='text']:focus{
+            outline: 2px solid #ff80f1;
+        }
+
+    </style>
+    
+</head>
+<body>
+<form class="form">
+    <label for="name">Enter your name</label>
+    <input type="text" name="name" placeholder="anna" id="name" required> <sup>*</sup>
+
+    <label for="email">Enter your email</label>
+    <input type="email" name="email" placeholder="example@gmail.com" id="email" required> <sup>*</sup>
+
+    <label for="password">Enter your password</label>
+    <input type="password" name="password" placeholder="" id="password" required> <sup>*</sup>
+    <label for="age">Enter your age</label>
+    <input type="number" name="age" placeholder="age" id="age" min="18" max="100">
+    <input type="color" name="color" >
+    <input type="file" name="color" >
+    <input type="date" name="color" >
+    <input type="time" name="color" >
+
+
+    <label>Sex</label>
+    <label><input type="radio" name="gender" value="male">Male</label>
+    <label><input type="radio" name="gender"  value="female">Female</label>
+
+    <label>
+        <input type="checkbox" name="newsletter">Subscribe for news
+    </label>
+
+    <label for="lorem">Country</label>
+    <select id="lorem">
+        <option value="">Choose country</option>
+        <option value="ua">Ukraine</option>
+        <option value="usa">USA</option>
+        <option value="ca">Canada</option>
+        <option value="pl">Polish</option>
+    </select>
+
+    <label for="phone"></label>
+    <select id="phone">
+        <optgroup label="apple">
+            <option value="iphone11">iphone11</option>
+            <option value="iphone12">iphone12</option>
+            <option value="iphone13">iphone13</option>
+        </optgroup>
+        <optgroup label="samsung">
+            <option value="iphone11">iphone11</option>
+            <option value="iphone12">iphone12</option>
+            <option value="iphone13">iphone13</option>
+        </optgroup>
+    </select>
+
+    <label for="comment"></label>
+    <textarea id="comment" rows="4" cols="30"></textarea>
+
+    <div>
+        <input type="submit" value="send">
+        <input type="reset" value="reset">
+    </div>
+</form>
+</body>
+</html>
