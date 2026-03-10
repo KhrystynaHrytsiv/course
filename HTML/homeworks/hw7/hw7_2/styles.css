@@ -209,7 +209,7 @@ section p{
     justify-content: space-between;
     gap: 32px;
 }
-.weather-rectangle{
+.weather-card{
     width: 209px;
     height: 206px;
     border-radius: 8px;
@@ -226,7 +226,7 @@ section p{
     width: 52px;
     height: 52px;
 }
-.weather-rectangle p{
+.weather-card p{
     width: 178px;
     color: #8E88C1;
     text-align: center;
