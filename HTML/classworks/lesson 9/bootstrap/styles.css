@@ -1,0 +1,30 @@
+.wrapper{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.btn-success{
+    background-color: #e7a0ad;
+
+}
+.grid-container{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.carousel{
+    height: 50vh;
+
+
+}
+.carousel img{
+    height: 50vh;
+    object-fit: cover;
+}
