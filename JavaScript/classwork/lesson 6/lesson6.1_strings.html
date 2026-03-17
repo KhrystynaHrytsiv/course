@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // let str = 'hello world';
+    // console.log(str);
+    // const s = str.concat('!!!');
+    // console.log(s);
+    // console.log(str.toUpperCase());
+    // console.log(str.toLowerCase());
+    // console.log(str.startsWith('he'));// check if value of str start with 'he' if it starts return true
+    // console.log(str.endsWith('lo'));
+    // console.log(str.substring(0, 7)); /// обріже все інше що не знаходиться між двома аргументами
+    // console.log(str.indexOf('o'));
+    // console.log(str.lastIndexOf('l'));
+    // console.log(str.indexOf('o', 5));
+    // console.log(str.charAt(8));
+    // console.log(str.replace('o', '!'));
+    // console.log(str.replaceAll('o', '@'));
+    // const split = str.split(' ');
+    // console.log(split);
+
+    let array = [];
+    console.log(Array.isArray(array));
+    // array[arr.length] = 100;
+    console.log(array.push('new element1'));
+    console.log(array.push('new element2'));
+    console.log(array.push('new element3'));
+    console.log(array.push('new element4'));
+    console.log(array.push('new element5'));
+    console.log(array);
+    console.log(array.pop());
+    console.log(array);
+
+    array.unshift('!!!')
+    console.log(array);
+    console.log(array.shift());
+    console.log(array);
+
+    const join = array.join();
+    console.log(join);
+
+    let nums =[11, 22, 33];
+    const concat = array.concat(nums);
+    console.log(concat);
+    console.log(array);
+
+    console.log(nums.reverse());
+
+    const slice = concat.slice(0 , 4);
+    console.log(slice);
+    console.log(concat);
+
+    // const splice = concat.splice(0, 2, 'sdcf', '13ds', 'wsdv c!!', 'bfedcszs');//перші 2 аргументи вказують з якого індекса почати, і скільки вирізати, а всі наступні будуть додаватись на їх місце
+    // console.log(splice);
+    // console.log(concat);
+
+    // console.log(concat.splice(indexOf(11), 1));
+
+    console.log(concat.includes(22));
+</script>
+</body>
+</html>
