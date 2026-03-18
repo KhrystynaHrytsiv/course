@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let map = new Map();
+    let doctor = {id: 'doctor'};
+    let mango = {id: 'mango'};
+    map.set(doctor,{name: 'katya', surname: 'popova'});
+    map.set(mango,{name: 'vika', surname: 'luza'});
+    map.set(mango,{name: 'qqqqq', surname: 'vvvv'});
+    console.log(map);
+    // console.log(map.get('doctor'));
+    console.log(map.get(mango));
+    // map.delete(doctor);
+    console.log(map);
+    // map.clear()
+    console.log(map.size);
+    console.log(map.keys());
+    let from = Array.from(map.keys());
+    console.log(from);
+    console.log(map.values());
+    let from1 = Array.from(map.values());
+    console.log(from1);
+</script>
+</body>
+</html>
