@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let user ={
+        name: 'anna',
+        skills:['html', 'js'],
+        greeting(){
+
+        }
+    };
+    // let userClone = {...user};
+    // console.log(user.skills === userClone.skills);
+
+// /deep copy не передає поведінку тільки характеристики////
+//     let userJSONClone = JSON.stringify(user);
+//     console.log(userJSONClone);
+//     let parse = JSON.parse(userJSONClone);
+//     console.log(parse);
+//     console.log(user);
+//     console.log(user.skills === parse.skills);
+    let assign = Object.assign({}, user);
+    console.log(assign);
+    console.log(user === assign);
+    console.log(user.skills === assign.skills);
+</script>
+</body>
+</html>
