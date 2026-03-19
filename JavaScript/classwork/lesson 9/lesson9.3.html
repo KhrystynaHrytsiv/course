@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>before</h1>
+<div id="target" xxx ='??' class="point">
+<!--    -->
+    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </b>
+       <span>Accusantium dicta doloremque eveniet exercitationem impedit, minima neque quas.</span>
+    Architecto cum deserunt inventore ipsam iste quas ullam, vel. Adipisci magnam recusandae unde.
+</div>
+<div xxx ='??' class="point">
+    <!--    -->
+    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </b>
+    <span>Accusantium dicta doloremque eveniet exercitationem impedit, minima neque quas.</span>
+    Architecto cum deserunt inventore ipsam iste quas ullam, vel. Adipisci magnam recusandae unde.
+</div>
+<div  xxx ='??' class="point">
+    <!--    -->
+    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </b>
+    <span>Accusantium dicta doloremque eveniet exercitationem impedit, minima neque quas.</span>
+    Architecto cum deserunt inventore ipsam iste quas ullam, vel. Adipisci magnam recusandae unde.
+</div>
+<h2>after</h2>
+<script>
+    // let target = document.getElementById('target');
+    // console.log(target.innerText);
+    // // target.innerText = 'hello';
+    // target.style.background = 'silver';
+    // console.log(target.classList);
+    // target.classList.add('foo');
+    // target.classList.add('bar');
+    // // console.log(target.classList.keys());
+    // // console.log(target.classList.item(0));
+    // // console.log(target.classList.contains('bar'));
+    // // target.classList.toggle('bar');//якщо вказаний клас не існує то додається, а якщо існує то видаляється
+    //
+    // target.getAttribute('xxx');
+    // target.getAttribute('id');
+    // target.getAttribute('class');
+    // target.getAttribute('style');
+    // // target.setAttribute('id', 'sdf')
+    // console.log(target.previousElementSibling);
+    // console.log(target.nextElementSibling);
+    // console.log(target.children);
+    // console.log(target.childNodes);
+    // target.innerHTML = '<b>gnejvf</b>'
+    // console.log(target.outerHTML);
+    let collectionDiv = document.getElementsByClassName('point');
+    for (const div of collectionDiv) {
+        div.innerText = 'sdfcvsax'
+        div.classList.add('qqq')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .user{
+            background: #5ffcc8;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<!--<ul class="users"></ul>-->
+<script>
+  let users = [
+              {name: 'vasya', age: 31, status: false},
+              {name: 'petya', age: 30, status: true},
+              {name: 'kolya', age: 29, status: true},
+              {name: 'olya', age: 28, status: false},
+              {name: 'max', age: 30, status: true},
+              {name: 'anya', age: 31, status: false},
+              {name: 'oleg', age: 28, status: false},
+              {name: 'andrey', age: 29, status: true},
+              {name: 'masha', age: 30, status: true},
+              {name: 'yulia', age: 31, status: false},
+              {name: 'ivan', age: 31, status: true}
+          ];
+
+    // let h2 = document.createElement('h2');
+    // h2.innerText = 'subtitle'
+    // document.body.appendChild(h2)
+  //   let usersUl = document.getElementsByClassName('users')[0];
+  //   for (const user of users) {
+  //       let li = document.createElement('li');
+  //       li.classList.add('user');
+  //       li.innerText = user.name
+  //       usersUl.appendChild(li)
+  //   }
+
+  for (const user of users) {
+      let usersInfoDiv = document.createElement('div');
+
+      let h2 = document.createElement('h2');
+      h2.innerText = user.name;
+
+      let p = document.createElement('p');
+      p.innerText = user.status + ' ' + user.age;
+
+      usersInfoDiv.append(h2, p);
+      document.body.appendChild(usersInfoDiv)
+
+  }
+</script>
+</body>
+</html>
