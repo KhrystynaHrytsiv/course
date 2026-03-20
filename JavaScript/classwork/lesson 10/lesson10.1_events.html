@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #target{
+            background: #918d8d;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div id="target"></div>
+<form id="f1" >
+    <input type="text" id="1" name="username">
+    <button>send</button>
+</form>
+<script>
+let target = document.getElementById('target');
+// target.onclick = function (ev){
+//     console.log('click');
+//     console.log(ev);
+// }
+// // target.onmousemove = function (ev){
+// //     console.log('move');
+// //     console.log(ev.clientX, ev.clientY);
+// //     let r =ev.clientX;
+// //     let g =ev.clientX;
+// //     let b =ev.clientY;
+// //     this.style.background = `rgb(${r}, ${g}, ${b})`
+// // }
+//
+// // target.onclick = function (ev){
+// //     console.log('asdfv');
+// // };
+// // console.log(target);
+//
+// // target.addEventListener('click', function (ev){
+// //     console.log('asdv');
+// // })
+//
+// target.onmouseover = function (){
+//     console.log('over');
+// }
+// target.onmouseleave = function (){
+//     console.log('leave');
+// }
+
+// let input = document.getElementById('1');
+// input.oninput = function (){
+//     console.log(this.value);
+//     target.innerText = this.value
+// }
+
+
+// let f1 = document.forms.f1;
+// f1.onsubmit = function (ev){
+//     ev.preventDefault();
+//     console.log('hello');
+//     let user = {name: this.username.value};
+//     console.log(user);
+// }
+
+window.onload = function (){
+    console.log('load');
+}
+document.onreadystatechange = function (){
+    if(document.readyState === 'interactive'){
+        document.body.innerText = 'loading starts...'
+    }
+    if(document.readyState === 'complete'){
+        document.body.innerText = 'loading complete...'
+    }
+}
+</script>
+</body>
+</html>
