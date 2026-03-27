@@ -1,4 +1,4 @@
 "use strict";
-function calc(a, b) {
+function calculator(a, b) {
     return a + b;
 }

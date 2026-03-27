@@ -2,12 +2,12 @@
 //     - користувачів зі статусом true
 // - користувачів зі статусом false
 // - користувачів які старші за 30 років
-interface IUser {
+interface IUser3 {
     name: string,
     age:number,
     status: boolean
 }
-let users3:IUser[] = [
+let users3:IUser3[] = [
             {name: 'vasya', age: 31, status: false},
             {name: 'petya', age: 30, status: true},
             {name: 'kolya', age: 29, status: true},

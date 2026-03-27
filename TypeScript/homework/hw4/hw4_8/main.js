@@ -1,5 +1,5 @@
 "use strict";
-function getArray(arr) {
+function getArrayN(arr) {
     document.write(`<ul>`);
     for (const item of arr) {
         document.write(`<li>${item}</li>`);
@@ -7,4 +7,4 @@ function getArray(arr) {
     document.write(`</ul>`);
 }
 ;
-getArray([1, 2, true, 1565, 'asd', false]);
+getArrayN([1, 2, true, 1565, 'asd', false]);

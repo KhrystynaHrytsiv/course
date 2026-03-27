@@ -8,6 +8,9 @@ function exchange(sumUAH, currencyValues, exchangeCurrency) {
             chooseCurrency = currency;
         }
     }
-    return sumUAH / chooseCurrency.value;
+    if (chooseCurrency) {
+        return sumUAH / chooseCurrency.value;
+    }
+    return -1;
 }
 console.log(exchange(10000, [{ currency: 'USD', value: 25 }, { currency: 'EUR', value: 42 }], 'USD'));
