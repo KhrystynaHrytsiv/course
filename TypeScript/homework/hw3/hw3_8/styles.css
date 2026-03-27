@@ -1,0 +1,13 @@
+.users-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.user-block{
+    border: 1px solid darkgrey;
+    width: 400px;
+}
+.address-block{
+    background-color: #e1dbe3;
+    font-size: 18px;
+}

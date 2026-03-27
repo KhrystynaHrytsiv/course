@@ -1,0 +1,11 @@
+.product-card{
+    background-color: rgba(143, 237, 241, 0.46);
+    width: 300px;
+    text-align: center;
+}
+.product-title{
+    font-size: 25px;
+}
+.product-image{
+    width: 200px;
+}
