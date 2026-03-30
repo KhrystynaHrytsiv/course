@@ -4,6 +4,7 @@ let elementsByTagName:HTMLCollectionOf<HTMLDivElement> = document.getElementsByT
 let forms:HTMLCollectionOf<HTMLFormElement> = document.forms;
 let f1:HTMLFormElement = forms[0];
 console.log(f1.username);
+//@ts-ignore
 let input:HTMLInputElement = f1['username'];
 console.log(input);
 

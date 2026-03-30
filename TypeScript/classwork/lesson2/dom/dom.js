@@ -5,6 +5,7 @@ let elementsByTagName = document.getElementsByTagName('div');
 let forms = document.forms;
 let f1 = forms[0];
 console.log(f1.username);
+//@ts-ignore
 let input = f1['username'];
 console.log(input);
 let p = document.createElement('p');

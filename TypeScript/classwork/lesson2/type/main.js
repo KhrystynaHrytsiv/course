@@ -55,58 +55,64 @@
 //             {id:1, name: 'yulia', age: 31, status: false},
 //             {id:1, name: 'ivan', age: 31, status: true}
 //         ];
-//@ts-ignore
-class User {
-    // private name:string;
-    // private age: number;
-    // private status:boolean;
-    constructor(_name, _age, _status) {
-        this._name = _name;
-        this._age = _age;
-        this._status = _status;
-        this._name = _name;
-        this._age = _age;
-        this._status = _status;
-    }
-    greeting() {
-        console.log('hello');
-    }
-    get name() {
-        return this._name;
-    }
-    set name(value) {
-        this._name = value;
-    }
-    get age() {
-        return this._age;
-    }
-    set age(value) {
-        this._age = value;
-    }
-    get status() {
-        return this._status;
-    }
-    set status(value) {
-        this._status = value;
-    }
-}
-let user = new User('asdef', 1, true);
-console.log(user.name);
-user.name = 'sderf';
-class User2 extends User {
-    // id:number;
-    constructor(_id, _name, _age, _status) {
-        super(_name, _age, _status);
-        this._id = _id;
-        this._id = _id;
-    }
-    get id() {
-        return this._id;
-    }
-    set id(value) {
-        this._id = value;
-    }
-}
-let user2 = new User2(1, 'dvfs', 12, false);
-console.log(user2.name);
-console.log(user2.id);
+// class User{
+//     // private name:string;
+//     // private age: number;
+//     // private status:boolean;
+//
+//     constructor(private _name: string, private _age: number, private _status: boolean) {
+//         this._name = _name;
+//         this._age = _age;
+//         this._status = _status;
+//     }
+//     public greeting(){
+//         console.log('hello');
+//     }
+//
+//     get name(): string {
+//         return this._name;
+//     }
+//
+//     set name(value: string) {
+//         this._name = value;
+//     }
+//
+//     get age(): number {
+//         return this._age;
+//     }
+//
+//     set age(value: number) {
+//         this._age = value;
+//     }
+//
+//     get status(): boolean {
+//         return this._status;
+//     }
+//
+//     set status(value: boolean) {
+//         this._status = value;
+//     }
+// }
+// let user = new User('asdef', 1, true);
+// console.log(user.name);
+// user.name = 'sderf'
+// //@ts-ignore
+// class User2 extends User{
+//     // id:number;
+//
+//     constructor(private _id: number, _name: string, _age: number, _status: boolean){
+//         super(_name, _age, _status );
+//         this._id = _id;
+//     }
+//
+//     get id(): number {
+//         return this._id;
+//     }
+//
+//     set id(value: number) {
+//         this._id = value;
+//     }
+// }
+// let user2 = new User2(1, 'dvfs', 12, false);
+// console.log(user2.name);
+// console.log(user2.id);
