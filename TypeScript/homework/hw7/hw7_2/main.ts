@@ -1,0 +1,38 @@
+// Взяти масив з  User7[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
+// @ts-ignore
+class User7 {
+    // constructor( private id:number, private name:string, private surname:string, private email:string, private phone:string){}
+    // getId(){
+    //     return this.id
+    // }
+
+    id:number;
+    name: string;
+    surname: string;
+    email: string;
+    phone: string
+
+    constructor( id:number,  name:string, surname:string,  email:string,  phone:string){
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+    }
+
+}
+// @ts-ignore
+let users:User7[] = [
+    new User7(1, "Ivan", "Ivanov", "ivan1@gmail.com", "+380111111111"),
+    new User7(2, "Petro", "Petrenko", "petro2@gmail.com", "+380222222222"),
+    new User7(3, "Oleg", "Olegov", "oleg3@gmail.com", "+380333333333"),
+    new User7(4, "Anna", "Ivanenko", "anna4@gmail.com", "+380444444444"),
+    new User7(5, "Maria", "Petrova", "maria5@gmail.com", "+380555555555"),
+    new User7(6, "Sergiy", "Sydorenko", "sergiy6@gmail.com", "+380666666666"),
+    new User7(7, "Olga", "Koval", "olga7@gmail.com", "+380777777777"),
+    new User7(8, "Andriy", "Bondar", "andriy8@gmail.com", "+380888888888"),
+    new User7(9, "Natalia", "Tkachenko", "natalia9@gmail.com", "+380999999999"),
+    new User7(10, "Dmytro", "Melnyk", "dmytro10@gmail.com", "+380000000000")
+];
+// console.log(users.filter((user:User7) => user.getId() % 2 === 0));
+console.log(users.filter((user:User7) => user.id % 2 === 0));

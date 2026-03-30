@@ -40,7 +40,13 @@ const desk:ICard[] = [
     { cardSuit: 'clubs', value: 'king', color: 'red'},
     { cardSuit: 'clubs', value: 'ace', color: 'red'},
 ];
-let reduce = desk.reduce((accumulator, card:ICard) =>{
+interface IAccum{
+    spades:ICard[],
+    diamonds:ICard[],
+    hearts:ICard[],
+    clubs:ICard[]
+}
+let reduce = desk.reduce((accumulator:IAccum, card:ICard) =>{
     if (card.cardSuit === 'spade'){
         accumulator.spades.push(card);
     } else if (card.cardSuit === 'diamond') {
