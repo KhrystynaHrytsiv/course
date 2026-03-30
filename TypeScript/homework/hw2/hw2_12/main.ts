@@ -5,7 +5,7 @@ interface ICourse {
    title:string,
     monthDuration: number
 }
-let coursesAndDurationArray :ICourse[] = [
+let coursesAndDurationArray2 :ICourse[] = [
     {title: 'JavaScript Complex', monthDuration: 5},
     {title: 'Java Complex', monthDuration: 6},
     {title: 'Python Complex', monthDuration: 6},
@@ -14,7 +14,7 @@ let coursesAndDurationArray :ICourse[] = [
     {title: 'Frontend', monthDuration: 4}
 ];
 
-for (let course of coursesAndDurationArray){
+for (let course of coursesAndDurationArray2){
     if (course.monthDuration > 5){
         console.log('super');
     }

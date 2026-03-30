@@ -1,10 +1,11 @@
 // Створити масив з 10 об’єктами, які описують сутніть “користувач”. Поля: name, username,password. Вивести в консоль пароль кожного користувача
-interface IUser {
+interface IUserI {
     name:string,
     username:string,
     password:string
 }
-let users2 :IUser[] = [
+
+let users2 :IUserI[] = [
     {name: 'Vika', username: 'mango', password: 'qd2qxs'},
     {name: 'Olia', username: 'papaya', password: 'evds@ve'},
     {name: 'Max', username: 'maximilian', password: '12e4qwas'},

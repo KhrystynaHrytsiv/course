@@ -1,5 +1,5 @@
 "use strict";
-let coursesAndDurationArray = [
+let coursesAndDurationArray2 = [
     { title: 'JavaScript Complex', monthDuration: 5 },
     { title: 'Java Complex', monthDuration: 6 },
     { title: 'Python Complex', monthDuration: 6 },
@@ -7,7 +7,7 @@ let coursesAndDurationArray = [
     { title: 'FullStack', monthDuration: 7 },
     { title: 'Frontend', monthDuration: 4 }
 ];
-for (let course of coursesAndDurationArray) {
+for (let course of coursesAndDurationArray2) {
     if (course.monthDuration > 5) {
         console.log('super');
     }
