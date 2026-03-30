@@ -5,6 +5,7 @@ fetch('https://dummyjson.com/carts')
     .then(res => res.json())
     .then((data) => {
     const { carts } = data;
+    console.log(carts);
     for (let cart of carts) {
         const { id, products, total, discountedTotal, userId, totalProducts, totalQuantity } = cart;
         let cartDiv = document.createElement('div');

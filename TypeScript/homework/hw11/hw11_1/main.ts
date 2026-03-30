@@ -10,12 +10,15 @@ interface ICart {
     totalProducts: number,
     totalQuantity:number
 }
+
+
 let container:HTMLDivElement = document.createElement('div');
 container.classList.add('container');
 fetch('https://dummyjson.com/carts')
     .then(res => res.json())
-    .then((data: { carts: ICart[] }) => {
-        const { carts } = data;
+    .then((data:{carts:ICart[]}) => {
+    const {carts} = data;
+        console.log(carts);
         for (let cart of carts) {
            const {id, products, total, discountedTotal, userId, totalProducts, totalQuantity} = cart;
            let cartDiv:HTMLDivElement = document.createElement('div');
