@@ -1,9 +1,10 @@
 // взяти https://dummyjson.com/docs/carts та вивести інформацію про всі корзини. Відобразити всі поля кожної корзини.
+interface IData {
+    carts:ICart[]
+}
 interface ICart {
     id: number,
-    products: [
-        {title:string}
-    ],
+    products: [{title:string}],
     total:number,
     discountedTotal:number,
     userId:number,
@@ -16,9 +17,8 @@ let container:HTMLDivElement = document.createElement('div');
 container.classList.add('container');
 fetch('https://dummyjson.com/carts')
     .then(res => res.json())
-    .then((data:{carts:ICart[]}) => {
-    const {carts} = data;
-        console.log(carts);
+    .then((data:IData) => {
+        const {carts} = data;
         for (let cart of carts) {
            const {id, products, total, discountedTotal, userId, totalProducts, totalQuantity} = cart;
            let cartDiv:HTMLDivElement = document.createElement('div');

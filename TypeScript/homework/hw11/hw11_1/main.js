@@ -4,6 +4,7 @@ container.classList.add('container');
 fetch('https://dummyjson.com/carts')
     .then(res => res.json())
     .then((data) => {
+    console.log(data);
     const { carts } = data;
     console.log(carts);
     for (let cart of carts) {
