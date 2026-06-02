@@ -94,7 +94,11 @@ select max(Sum) from application where CreditState='Not returned';
 select  idClient, FirstName, LastName, Sum from client join application on client.idClient = application.Client_idClient order by Sum limit 1;
 
 # 25.Знайти кредити, сума яких більша за середнє значення усіх кредитів
-#
+select * from application where Sum> (select avg(Sum) from application);
+
 # 26. Знайти клієнтів, які є з того самого міста, що і клієнт, який взяв найбільшу кількість кредитів
-#
+select * from client where City = ( select c.City from client c join application a on c.idclient = a.client_idclient
+    group by idclient order by count(*) desc limit 1);
+
 # 27. Місто клієнта з найбільшою кількістю кредитів
+select city from client join application on client.idClient = application.Client_idClient group by Client_idClient order by count(*) desc limit 1;
