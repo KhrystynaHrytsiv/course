@@ -1,0 +1,71 @@
+db.students.find()
+// it doesn`t work correct
+db.students.find({lessons: 'english', lessons: 'mathematics'})
+// find all values which include in array
+db.students.find({lessons:{$all: ['english', 'mathematics']}})
+db.students.find({'lessons.1':'mathematics'})
+db.students.findOne({'lessons.1':'mathematics'}).name
+db.students.find({},{lessons:{$slice:2}})
+db.students.find({lessons:{$size:2}})
+
+db.students.find({_id:ObjectId('6a1f108a04810a3980d31eb0')})
+db.students.updateOne(
+    {_id:ObjectId('6a1f108a04810a3980d31eb0')},
+    {$push:{lessons: 'python'}}
+)
+// delete all elements with value 'aaa'
+db.students.updateOne(
+    {_id:ObjectId('6a1f108a04810a3980d31eb0')},
+    {$pull:{lessons: 'aaaa'}}
+)
+// delete element with index 3 but leave null
+db.students.updateOne(
+    {_id:ObjectId('6a1f108a04810a3980d31eb0')},
+    {$unset:{'lessons.3':1}}
+)
+db.students.updateOne(
+    {_id:ObjectId('6a1f108a04810a3980d31eb0')},
+    {$pull:{lessons: null}}
+)
+//delete last element on array
+db.students.updateOne(
+    {_id:ObjectId('6a1f108a04810a3980d31eb0')},
+    {$pop:{lessons: 1}}
+)
+//delete first element on array
+db.students.updateOne(
+    {_id:ObjectId('6a1f108a04810a3980d31eb0')},
+    {$pop:{lessons: -1}}
+)
+// add only unique values
+db.students.updateOne(
+    {_id:ObjectId('6a1f108a04810a3980d31eb0')},
+    {$addToSet:{lessons: 'js'}}
+)
+// change all elements on array for value set in brackets
+db.students.updateOne(
+    {_id:ObjectId('6a1f108a04810a3980d31eb0')},
+    {$set:{'lessons.$[]': 'js'}}
+)
+// find all element which value null and change for 'html'
+db.students.updateOne(
+    {_id:ObjectId('6a1f108a04810a3980d31eb0')},
+    {$set:{'lessons.$[item]': 'html'}},
+    {arrayFilters:[{item: null}]}
+)
+// db.students.find({lessons:{$size:{$lt:4}}} it doesn`t work
+// find all students which lessons are less than 4
+db.students.aggregate([
+    {$addFields:{
+        lessonsCount: {$size:'$lessons'}
+        }
+    },
+    {$match:{
+        lessonsCount:{$lt:4}
+        }
+    },
+    {$sort:{lessonsCount: -1}},
+    {$project:{
+        lessonsCount:0
+        }}
+])
