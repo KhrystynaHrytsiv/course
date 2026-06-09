@@ -1,4 +1,3 @@
-const {foo:helperFoo}= require('./helper/helper');
 const fsPromises = require('node:fs/promises');
 const fs = require('node:fs');
 const path = require('node:path');
