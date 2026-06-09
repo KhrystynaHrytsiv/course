@@ -8,10 +8,10 @@ const os = require('node:os');
 const foo = async () => {
 
     //FS(file system)модуль який призначений для взаємодії з файлевою системою на пк фбо сервері
-    const pathFile = path.join(__dirname, 'text.txt')
+    // const pathFile = path.join(__dirname, 'text.txt')
     // await fsPromises.writeFile(pathFile, 'hello world\n');//after command node index create a text file with name test and its has inside hello world
-    const data = await fsPromises.readFile(pathFile, 'utf-8');
-    console.log(data);//покаже весь вміст даного файла якщо буде кодування 'utf-8'
+    // const data = await fsPromises.readFile(pathFile, 'utf-8');
+    // console.log(data);//покаже весь вміст даного файла якщо буде кодування 'utf-8'
 
     // const data = await fsPromises.readFile(pathFile);
     // console.log(data.toString();//покаже весь вміст даного файла без кодування, але тільки якщо буде функція toString()
